@@ -39,12 +39,12 @@ body {
 
 /* Global Content Grid System */
 .privacy-container {
-  max-width: 1120px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 96px 32px;
   display: grid;
-  grid-template-columns: 240px 1fr;
-  gap: 80px;
+  grid-template-columns: 248px 1fr;
+  gap: 70px;
 }
 
 /* Left Dynamic Sticky Navigation Tracker */
@@ -58,9 +58,19 @@ body {
   margin-bottom: 28px;
 }
 
+.sidebar-image {
+  max-width: 180px;
+}
+
+.sidebar-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .effective-date {
   font-family: var(--font-mono);
-  font-size: 22px;
+  font-size: 14px;
   font-weight: 700;
   color: var(--primary-color);
   text-transform: uppercase;
@@ -70,13 +80,13 @@ body {
 .sidebar-nav {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 10px;
   border-left: 2px solid var(--border-hairline);
   padding-left: 18px;
 }
 
 .sidebar-link {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--text-light);
   text-decoration: none;
@@ -134,31 +144,31 @@ body {
   font-size: 22px;
   font-weight: 700;
   color: var(--primary-color);
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   letter-spacing: -0.02em;
 }
 
 .privacy-section h3 {
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
-  color: var(--text-dark);
-  margin-top: 32px;
-  margin-bottom: 14px;
-  letter-spacing: 0.06em;
+  color: var(--text-main);
+  margin-top: 22px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 
 .privacy-section p {
   font-size: 15px;
   color: var(--text-main);
-  margin-bottom: 18px;
+  font-weight: 500;
+  margin-bottom: 8px;
 }
 
 /* Premium Structured List Elements */
 .privacy-section ul {
   list-style: none;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .privacy-section ul li {
@@ -166,7 +176,6 @@ body {
   color: var(--text-main);
   position: relative;
   padding-left: 20px;
-  margin-bottom: 12px;
 }
 
 .privacy-section ul li::before {
