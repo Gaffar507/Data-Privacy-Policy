@@ -39,12 +39,12 @@ body {
 
 /* Global Content Grid System */
 .privacy-container {
-  max-width: 1200px;
+  max-width: 1220px;
   margin: 0 auto;
-  padding: 96px 32px;
+  padding: 56px 32px;
   display: grid;
   grid-template-columns: 248px 1fr;
-  gap: 70px;
+  gap: 60px;
 }
 
 /* Left Dynamic Sticky Navigation Tracker */
@@ -115,7 +115,7 @@ body {
 /* Master Header Block */
 .content-header {
   border-bottom: 1px solid var(--border-hairline);
-  padding-bottom: 48px;
+  padding-bottom: 40px;
 }
 
 .main-title {
