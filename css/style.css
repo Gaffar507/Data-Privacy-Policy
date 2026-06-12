@@ -39,7 +39,7 @@ body {
 
 /* Global Content Grid System */
 .privacy-container {
-  max-width: 1220px;
+  max-width: 1120px;
   margin: 0 auto;
   padding: 56px 32px;
   display: grid;
