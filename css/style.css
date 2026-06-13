@@ -2,21 +2,21 @@
 :root {
   --bg-document: #ffffff;
   
-  /* Brand Unified Color Palette */
-  --primary-color: #3D5678;    /* Legacy Core Brand Slate Blue */
-  --text-dark: #1e293b;        /* High Contrast Headings (Slate 800) */
-  --text-main: #002559;        /* Optimized Editorial Body Text (Slate 600) */
-  --text-light: #003785;       /* Metadata / Secondary Sidebar Nav Links */
-  --border-hairline: #e2e8f0;  /* Ultra-thin Minimalist Border (Slate 200) */
-  --bg-surface-soft: #f8fafc;  /* Functional Accent Background (Slate 50) */
-  --accent-warn: #f59e0b;      /* Notice Box Active Left Stripe Line */
+  /* Brand Corporate Colors */
+  --primary-color: #033274;    /* Legacy Core Brand Slate Blue */
+  --text-dark: #1e293b;        /* Deep Headings Contrast (Slate 800) */
+  --text-main: #475569;        /* Clean Editorial Body Text (Slate 600) */
+  --text-light: #64748b;       /* Subtle Metadata & Inactive Nav Links */
+  --border-hairline: #e2e8f0;  /* Razor-thin Clean Border Divider */
+  --bg-surface-soft: #f8fafc;  /* Functional Accent Card Background */
+  --accent-warn: #f59e0b;      /* Notice Highlights Box Indicator Color */
   
-  /* System Typography */
+  /* Layout Typography Stack */
   --font-editorial: 'DM_Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
-/* Base Configuration & Layout Architecture */
+/* Base Formats Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -37,35 +37,25 @@ body {
   line-height: 1.8;
 }
 
-/* Global Content Grid System */
+/* Structural Master Layout Container */
 .privacy-container {
   max-width: 1120px;
   margin: 0 auto;
-  padding: 56px 32px;
+  padding: 28px 32px;
   display: grid;
-  grid-template-columns: 248px 1fr;
-  gap: 60px;
+  grid-template-columns: 240px 1fr;
+  gap: 80px;
 }
 
-/* Left Dynamic Sticky Navigation Tracker */
+/* Sticky Left Table of Contents */
 .privacy-sidebar {
   position: sticky;
-  top: 48px;
+  top: 28px;
   height: fit-content;
 }
 
 .sidebar-header {
   margin-bottom: 28px;
-}
-
-.sidebar-image {
-  max-width: 160px;
-}
-
-.sidebar-image img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
 }
 
 .effective-date {
@@ -77,10 +67,20 @@ body {
   letter-spacing: 0.05em;
 }
 
+.sidebar-logo {
+  max-width: 150px;
+}
+
+.sidebar-logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .sidebar-nav {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
   border-left: 2px solid var(--border-hairline);
   padding-left: 18px;
 }
@@ -88,7 +88,7 @@ body {
 .sidebar-link {
   font-size: 14px;
   font-weight: 600;
-  color: var(--text-light);
+  color: var(--primary-color);
   text-decoration: none;
   transition: color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
   white-space: nowrap;
@@ -105,17 +105,17 @@ body {
   font-weight: 700;
 }
 
-/* Right Side Content Blueprint Layout */
+/* Right Content Blueprint Configuration */
 .privacy-content {
   display: flex;
   flex-direction: column;
   gap: 64px;
 }
 
-/* Master Header Block */
+/* Header Area Block Setup */
 .content-header {
   border-bottom: 1px solid var(--border-hairline);
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 
 .main-title {
@@ -137,45 +137,49 @@ body {
 .intro-text {
   font-size: 15px;
   color: var(--text-main);
+  margin-bottom: 12px;
 }
 
-/* Content Typography Hierarchies */
+/* Content Headings Setup */
 .privacy-section h2 {
   font-size: 22px;
   font-weight: 700;
   color: var(--primary-color);
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   letter-spacing: -0.02em;
 }
 
 .privacy-section h3 {
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
-  color: var(--text-main);
-  margin-top: 22px;
-  letter-spacing: 0.2em;
+  color: var(--text-dark);
+  margin-top: 32px;
+  margin-bottom: 10px;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .privacy-section p {
   font-size: 15px;
-  color: var(--text-main);
   font-weight: 500;
-  margin-bottom: 8px;
+  color: var(--text-main);
+  margin-bottom: 5px;
 }
 
-/* Premium Structured List Elements */
+/* Clean Unordered Minimal Lists */
 .privacy-section ul {
   list-style: none;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .privacy-section ul li {
   font-size: 15px;
-  color: var(--text-main);
+  color: rgb(6, 6, 79);
+  font-weight: 400;
   position: relative;
   padding-left: 20px;
+  margin-bottom: 2px;
 }
 
 .privacy-section ul li::before {
@@ -189,7 +193,7 @@ body {
   border-radius: 50%;
 }
 
-/* Professional International Highlight Box Component */
+/* Modern Minimalist Notice Box Accent */
 .alert-box {
   background-color: var(--bg-surface-soft);
   border-left: 3px solid var(--accent-warn);
@@ -214,7 +218,7 @@ body {
   margin-top: 8px;
 }
 
-/* Contact Footer Framework */
+/* Contact Footer Container Card */
 .contact-card {
   border-top: 1px solid var(--border-hairline);
   padding-top: 48px;
@@ -240,7 +244,7 @@ body {
   color: var(--text-dark);
 }
 
-/* Responsive Adaptive Viewports layout scaling */
+/* Dynamic Viewports Mobile Breakpoints Scaling */
 @media (max-width: 992px) {
   .privacy-container {
     grid-template-columns: 1fr;
@@ -249,7 +253,7 @@ body {
   }
   
   .privacy-sidebar {
-    display: none; /* Collapses sidebar for minimal distraction on touch screens */
+    display: none; /* Hide sticky sidebar tracker for seamless multi-touch navigation */
   }
   
   .main-title {
