@@ -58,6 +58,10 @@ body {
   margin-bottom: 28px;
 }
 
+.sidebar-header-mobile {
+  display: none;
+}
+
 .effective-date {
   font-family: var(--font-mono);
   font-size: 14px;
@@ -255,9 +259,26 @@ body {
   .privacy-sidebar {
     display: none; /* Hide sticky sidebar tracker for seamless multi-touch navigation */
   }
-  
+
+  .sidebar-header-mobile {
+  display: block;
+}
   .main-title {
     font-size: 32px;
+    letter-spacing: -0.03em;
+  }
+}
+
+@media (max-width: 792px) {
+  .privacy-container {
+    margin-bottom: 20px;
+  }
+  
+  .privacy-content {
+  gap: 38px;
+}
+  .main-title {
+    font-size: 30px;
     letter-spacing: -0.03em;
   }
 }
